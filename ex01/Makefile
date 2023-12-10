@@ -6,7 +6,7 @@
 #    By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/04 14:46:34 by mkaraden          #+#    #+#              #
-#    Updated: 2023/12/04 14:47:34 by mkaraden         ###   ########.fr        #
+#    Updated: 2023/12/10 15:51:33 by mkaraden         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= claptrap
+NAME		= scavtrap
 	
 CC			= c++
 FLAGS		= -Wall -Wextra -Werror -std=c++98
@@ -30,7 +30,7 @@ RM			= rm -rf
 
 OBJDIR = .objFiles
 
-FILES		= main ClapTrap
+FILES		= main ClapTrap ScavTrap
 
 SRC			= $(FILES:=.cpp)
 OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))

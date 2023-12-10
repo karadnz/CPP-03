@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/04 14:44:04 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/12/10 14:48:02 by mkaraden         ###   ########.fr       */
+/*   Created: 2023/12/10 14:52:19 by mkaraden          #+#    #+#             */
+/*   Updated: 2023/12/10 15:58:41 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
+
 #include "ClapTrap.hpp"
 
-int main( void )
+class ScavTrap: public ClapTrap
 {
-    ClapTrap alakin("Alakin");
-    ClapTrap patlamakin(alakin);
-    ClapTrap kkilitci("Kkilitci");
+    public:
+		ScavTrap();
+        ScavTrap(std::string name);
+		ScavTrap(const ScavTrap &copy);	
 
-    patlamakin = kkilitci;
+		virtual ~ScavTrap();
 
-    alakin.attack("Kkilitci");
-    kkilitci.takeDamage(20);
-    kkilitci.attack("Alakin");
-    kkilitci.beRepaired(50);
-    kkilitci.attack("Alakin");
+		ScavTrap &operator=(const ScavTrap &src);
 
+		void attack(const std::string &target);
+		void guardGate(void);
+};
 
-    return EXIT_SUCCESS;
-}
+#endif
