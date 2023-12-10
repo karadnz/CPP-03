@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FlagTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 17:49:40 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/12/10 17:55:33 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/12/11 01:07:26 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FLAGTRAP_HPP
-#define FLAGTRAP_HPP
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
 
 #include "ClapTrap.hpp"
 
 //no mention of attack in subject check it
-class FlagTrap: public ClapTrap
+class FragTrap: public ClapTrap
 {
     public:
-		FlagTrap();
-        FlagTrap(std::string name);
-		FlagTrap(const FlagTrap &copy);	
+		FragTrap();
+        FragTrap(std::string name);
+		FragTrap(const FragTrap &copy);	
 
-		~FlagTrap(); //virtual?
+		~FragTrap(); //virtual?
 
-		FlagTrap &operator=(const FlagTrap &src);
+		FragTrap &operator=(const FragTrap &src);
 
 		void attack(const string &target);
 		void highFivesGuys(void);
