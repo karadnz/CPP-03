@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 17:49:40 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/12/11 17:34:34 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/12/11 18:16:00 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include "ClapTrap.hpp"
 
-//no mention of attack in subject check it
 class FragTrap: public ClapTrap
 {
     public:

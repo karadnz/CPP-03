@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:52:21 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/12/10 15:57:13 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/12/11 18:16:09 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ ScavTrap::~ScavTrap()
 	std::cout << "_ScavTrap destructor" << std::endl;
 }
 
-//should i call parent?
 ScavTrap &ScavTrap::operator=(const ScavTrap &rhs)
 {
 	std::cout << "_ScavTrap copy assigment" << std::endl;
@@ -53,7 +52,6 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &rhs)
 	return *this;
 }
 
-// Public Methods
 void    ScavTrap::attack(string const& target)
 {
     if (_energyPoints <= 0 || _hitPoints <= 0)
