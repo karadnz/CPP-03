@@ -6,12 +6,12 @@
 #    By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/04 14:46:34 by mkaraden          #+#    #+#              #
-#    Updated: 2023/12/10 17:53:44 by mkaraden         ###   ########.fr        #
+#    Updated: 2023/12/11 17:36:15 by mkaraden         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-NAME		= flagtrap
+NAME		= fragtrap
 	
 CC			= c++
 FLAGS		= -Wall -Wextra -Werror -std=c++98
@@ -19,7 +19,7 @@ RM			= rm -rf
 
 OBJDIR = .objFiles
 
-FILES		= main ClapTrap ScavTrap FlagTrap
+FILES		= main ClapTrap ScavTrap FragTrap
 
 SRC			= $(FILES:=.cpp)
 OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))

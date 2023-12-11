@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 14:07:38 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/12/10 16:14:21 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/12/11 17:33:24 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class ClapTrap
 		ClapTrap(const ClapTrap &copy);
 		ClapTrap(string name);
 		
-		virtual ~ClapTrap(); //virtual?
+		virtual ~ClapTrap();
 
 		ClapTrap &operator=(const ClapTrap &src);
 

@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 14:52:19 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/12/10 16:15:06 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/12/11 17:26:05 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ class ScavTrap: public ClapTrap
         ScavTrap(std::string name);
 		ScavTrap(const ScavTrap &copy);	
 
-		~ScavTrap(); //virtual?
-
+		~ScavTrap();
 		ScavTrap &operator=(const ScavTrap &src);
 
 		void attack(const std::string &target);
